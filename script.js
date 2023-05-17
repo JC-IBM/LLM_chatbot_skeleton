@@ -41,7 +41,7 @@ const sendMessage = async (message) => {
   messagesContainer.appendChild(loadingtextElement);
   
   // !!!!! change the 'test' to the code to fetch content sent to the model
-  response = {"response": "test"};
+  data = {"response": "test"};
   //
   
   // Deleting the loading animation
@@ -50,8 +50,6 @@ const sendMessage = async (message) => {
   loadanimation.remove();
   loadtxt.remove();
 
-  // Hoding the respones
-  const data = await response.json();
   if (data.error) {
     // Handle the error here
     const errorMessage = JSON.stringify(data);
