@@ -41,7 +41,7 @@ const sendMessage = async (message) => {
   messagesContainer.appendChild(loadingtextElement);
   
   // !!!!! change the 'test' to the code to fetch content sent to the model
-  response = 'test';
+  response = {"response": "test"};
   //
   
   // Deleting the loading animation
